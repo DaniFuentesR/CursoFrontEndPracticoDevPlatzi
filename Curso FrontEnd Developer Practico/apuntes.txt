@@ -1,0 +1,4 @@
+Justify-content se utiliza para alinear y distribuir los elementos padre
+
+.product-info div p:nth-child(1) {} => se leeria: el primer parrafo que esté dentro de div y que esté dento de product-info va a tener ese estilo IMPORTANTE! Tener en cuenta que no se menciona "Que tenga la clase tal" solo que esté dentro de...
+

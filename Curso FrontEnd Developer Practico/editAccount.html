@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mainContainer{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            margin-top: -150px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .account{
+            margin-bottom: 50px;
+        }
+
+        .mainValue{
+            color: #000000;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+      .value{
+        color: var(--very-light-pink);
+      }
+
+        .createInput{
+            margin-top: 30px;
+            border: 1px solid var(--hospital-green);
+            border-radius: 8px;
+            background-color: var(--white);
+            color: var(--hospital-green);
+            height: 55px;
+            font-size: var(--md);
+        }
+
+        .createInput:hover{
+            background-color: green;
+            color: var(--text-input-field);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="container">
+            <form action="/" class="form">
+                <h1 class="account">My account</h1>
+
+                <label  class="mainValue" for="name">Name</label>
+                <p class="value">Camila Yokoo</p>
+
+                <label class="mainValue" for="email">Email</label>
+                <p class="value">camilaYokoo@gmail.com</p>
+
+                <label class="mainValue" for="password">Password</label>
+                <p class="value">*********</p>
+
+                <input type="submit" value="Edit" class="createInput">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
